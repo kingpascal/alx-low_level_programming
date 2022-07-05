@@ -6,11 +6,12 @@
  */
 int main(void)
 {
-char*sh = "_putchar\n";
-while (*sh);
+char l[] = {"_putchar"};
+int i;
+for (i = 0; i < 9; i++)
 {
-_putchar(*sh);
-sh++;		
+_putchar(l[i]);
+}
 _putchar('\n');
 return (0);
-}
+} 
