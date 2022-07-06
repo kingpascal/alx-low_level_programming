@@ -1,31 +1,25 @@
-include "main.h"
-/**
- * jack_bauer - print every minute of the day
- *
- * Return: every minute of the day of Jack Bauer
+/*
+*File: 8-24_hours.c
+*Auth: kingpascal
 */
+#include "main.h"
+/**
+ * jack_bauer - Prints every minute of the day of
+ * Jack Bauer, starting from 00:00 to 23:59.
+ */
 void jack_bauer(void)
 {
-int H, h, M, m;
-for (H = 0; H <= 2; H++)
+int hour, minute;
+for (hour = 0; hour <= 23; hour++)
 {
-for (h = 0; h <= 9; h++)
+for (minute = 0; minute <= 59; minute++)
 {
-for (M = 0; M < 6; M++)
-{
-for (m = 0; m <= 9; m++)
-{
-if (!((H == 2) && (h > 3)))
-{
-_putchar('0' + H);
-_putchar('0' + h);
+_putchar((hour / 10) + '0');
+_putchar((hour % 10) + '0');
 _putchar(':');
-_putchar('0' + M);
-_putchar('0' + m);
+_putchar((minute / 10) + '0');
+_putchar((minute % 10) + '0');
 _putchar('\n');
-}
-}
-}
 }
 }
 }
