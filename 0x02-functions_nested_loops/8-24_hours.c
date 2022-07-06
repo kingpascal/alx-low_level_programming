@@ -1,8 +1,8 @@
 include "main.h"
 /**
- *jack_bauer - print every minute of the day
+ * jack_bauer - print every minute of the day
  *
- *Return: every minute of the day of Jack Bauer
+ * Return: every minute of the day of Jack Bauer
 */
 void jack_bauer(void)
 {
